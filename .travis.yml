@@ -18,6 +18,9 @@ env:
   global:
   - CLASSPATH=/usr/share/java/xalan-j2.jar:/usr/share/java/xercesImpl.jar:/usr/share/java/xml-resolver.jar:$(pwd)/.travis
 
+arch:
+  - ppc64le
+
 install:
 - sudo apt-get update -q
 - sudo apt-get install xsltproc
